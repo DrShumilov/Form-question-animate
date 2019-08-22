@@ -1,0 +1,111 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background: #EFEFEF;
+}
+/*.case {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}*/
+.container {
+	position: fixed;
+	bottom: 0;
+	right: 10%;
+	-webkit-transform: translateY(520px);
+	        transform: translateY(520px);
+	width: 350px;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.container:hover {
+	-webkit-transform: translateY(510px);
+	        transform: translateY(510px);
+}
+.toggleForm:checked ~ .container {
+	-webkit-transform: translateY(0);
+	        transform: translateY(0);
+}
+.toggleForm[type="checkbox"] {
+	display: none;
+}
+.formBox {
+	padding: 30px;
+	border: 3px solid #C607DD;
+	background: #fff;
+}
+.toggleForm {
+	display: block;
+	background: #C607DD;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px 0;
+	width: 85%;
+	border-radius: 8px 8px 0 0;
+	font-size: 24px;
+	cursor: pointer;
+}
+.toggleForm i {
+	position: absolute;
+	left: 50px;
+}
+.inputBox {
+	margin: 0 0 20px;
+	position: relative;
+}
+.labelText {
+	position: absolute;
+	font-size: 16px;
+	line-height: 55px;
+	color: #a5a5a5;
+	transition: 0.5s;
+}
+.userInput {
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	color: #575454;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #a5a5a5;
+	position: relative;
+	background: transparent;
+}
+.focus .labelText {
+	-webkit-transform: translateY(-30px);
+	        transform: translateY(-30px);
+	font-size: 14px;
+	color: #C607DD;
+}
+textarea.userInput {
+	height: 100px;
+	margin-top: 12px;
+}
+.persDoc,
+.persDoc a {
+	font-size: 14px;
+	color: #a5a5a5;
+	transition: 0.5s;
+}
+.persDoc a:hover {
+	color: #C607DD;
+}
+.btn {
+	background: #C607DD;
+	color: #fff;
+	width: 45%;
+	height: 35px;
+	font-size: 18px;
+	border: none;
+	margin-top: 10px;
+	margin-left: 50%;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.btn:hover {
+	background: #E408FF;
+}
